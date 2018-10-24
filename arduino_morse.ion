@@ -1,1 +1,230 @@
 
+const int LED = 13;
+const int DELAY = 500;
+const int LIGHT = 500;
+void setup()
+{
+  pinMode(LED, OUTPUT);
+}
+
+void loop()
+{
+  morse_A ();
+  morse_B ();
+  morse_Stop ();
+
+}
+void point()
+{
+  digitalWrite(LED, HIGH);
+  delay(LIGHT); // Wait for 1000 millisecond(s)
+  digitalWrite(LED, LOW);
+  delay(DELAY); // Wait for 200 millisecond(s)
+  
+}
+void tiret ()
+{
+  digitalWrite(LED, HIGH);
+  delay(LIGHT *3); // Wait for 1000 millisecond(s)
+  digitalWrite(LED, LOW);
+  delay(DELAY); // Wait for 200 millisecond(s)
+}
+
+void morse_Stop ()
+{
+  digitalWrite(LED, LOW);
+  delay(DELAY *3); // Wait for 200 millisecond(s)
+}
+
+void morse_A ()
+{
+  point();
+  tiret();
+}
+void morse_B ()
+{
+  tiret();
+  point();
+  point();
+  point();
+}
+void morse_C ()
+{
+  tiret();
+  point();
+  tiret();
+  point();
+}
+
+void morse_D ()
+{
+  tiret();
+  point();
+  point();
+}
+
+
+void morse_E ()
+{
+  point();
+}
+
+void morse_F ()
+{
+  point();
+  point();
+  tiret();
+  point();
+}
+
+void morse_G ()
+{
+  tiret();
+  tiret();
+  point();
+}
+
+
+void morse_H ()
+{
+  point();
+  point();
+  point();
+  point();
+}
+
+
+void morse_I ()
+{
+  point();
+  point();
+}
+
+
+void morse_J ()
+{
+  point();
+  tiret();
+  tiret();
+  tiret();
+}
+
+
+void morse_K ()
+{
+  tiret();
+  point();
+  tiret();
+}
+
+
+void morse_L ()
+{
+  point();
+  tiret();
+  point();
+  point();
+}
+
+void morse_M ()
+{
+  tiret();
+  tiret();
+}
+
+void morse_N ()
+{
+  tiret();
+  point();
+}
+
+void morse_O ()
+{
+  tiret();
+  tiret();
+  tiret();
+}
+
+void morse_P ()
+{
+  point();
+  tiret();
+  tiret();
+  point();
+}
+
+void morse_Q ()
+{
+  tiret();
+  tiret();
+  point();
+  tiret();
+}
+
+
+void morse_R ()
+{
+  point();
+  tiret();
+  point();
+}
+
+void morse_S ()
+{
+  point();
+  point();
+  point();
+}
+
+void morse_T ()
+{
+  tiret();
+}
+
+void morse_U ()
+{
+  point();
+  point();
+  tiret();
+}
+
+
+void morse_V ()
+{
+  point();
+  point();
+  point();
+  tiret();
+}
+
+
+void morse_W ()
+{
+  point();
+  tiret();
+  tiret();
+}
+
+
+void morse_X ()
+{
+  tiret();
+  point();
+  point();
+  tiret();
+}
+
+void morse_Y ()
+{
+  tiret();
+  point();
+  tiret();
+  tiret();
+}
+void morse_Z ()
+{
+  tiret();
+  tiret();
+  point();
+  point();
+}
